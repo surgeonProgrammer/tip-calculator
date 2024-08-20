@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Restaurant tip calculator</title>
+</head>
+<body class='bg-gradient-to-r from-blue-300 via-red-500 to-blue-300 flex justify-center items-center h-screen ' >
+ <div class='bg-white p-10 rounded-xl w-[400px] h-[400px]'>
+
+  <h1 class='text-3xl font-bold text-center mb-10'>Restaurant Tip Calculator</h1>
+
+  <div class='flex justify-between items-center'>
+    <label for="billAmount" class='text-xl font-semibold'>Bill amount:</label>
+    <input type="number" id="billAmount" class='border border-yellow-600 shadow-lg p-2 rounded-lg w-[200px]'>
+  </div>
+  <div class='flex justify-between items-center'>
+    <label for="totalAmount" class='text-xl font-semibold'>Total Amount:</label>
+  
+    <textarea id="totalAmount" placeholder="Please wait for your total bill" class="border border-yellow-600 shadow-lg p-2 rounded-lg w-[200px] h-[70px] mt-[8px] text-[13px] text-center font-bold"></textarea>
+
+  </div>
+
+  <button onclick="calculateTip()" class="calculateButton bg-blue-500 text-white p-2 rounded-lg w-full mt-10 hover:bg-blue-600">Calculate</button>
+
+ </div>
+
+ <script src='script.js'></script>
+</body>
+</html>
